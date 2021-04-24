@@ -1,0 +1,23 @@
+body
+{
+    /* background-color: black; */
+    color:yellow;
+    font-size: large;
+   
+}
+.container{
+    height: 600px;
+    width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.item
+{
+    height:100px;
+    width:300px;
+    border:teal solid 3px;
+  padding:3px;
+  margin: 10px;
+}
