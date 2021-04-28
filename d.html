@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css.css">
+
+
+	<title> Login Page | E-Invigilator</title>
+  	<link rel="shortcut icon" href="logo.png">
+  <style type="text/css">
+
+
+	.body1 {
+	  background-image: -webkit-linear-gradient(-30deg, #f1faee 50%, #a8dadc 50%);
+	  height: 100%;
+	  height: 100%;
+      margin: 0;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+	}
+
+	.body {
+	  background:linear-gradient(-45deg, #03045e, #0077b6, #00b4d8, #f1faee);
+      margin: 0;
+      background-size: 400% 400%;
+      background-repeat: no-repeat;
+      animation: gradient 15s ease infinite;
+	}
+
+
+	@keyframes gradient {
+		0% {
+			background-position: 0% 50%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		100% {
+			background-position: 0% 50%;
+		}
+	}
+
+	.header {
+		opacity: 0.5
+	}
+
+
+
+  </style>
+  <style>
+     .change 
+     {
+         display:flex;
+       ;
+    
+     }
+      #onpage_canvas
+     {
+         height: 300px;
+         width: 400px;
+         display: flex;
+         justify-content: right;
+     } 
+
+
+     #one{
+            height: 300px;
+            width: 500px;
+            justify-content: right;
+            margin-left: 60%;
+            margin-top: 10%;
+            
+            background-color: black;
+
+        }
+    </style>
+</head>
+<body class="body1">
+
+    <div class="change" style="display: flex; align-items: right; justify-content:right;margin: 5%" >
+        
+        <a  href="file:///C:/Users/cools/Desktop/6thsem%20Project/Project/index.html"><img src="{% static 'mysite/images/logo_tp_500.png' %}" height="150px" width="150px"></a><span>
+        <h1 class="text-uppercase" style="color: #e63946">E <span style="color: #1d3557;">-</span> <span class="text-uppercase" style="color: #1d3557;">Invigilator</span></h1>
+    </div>
+    <div id="one">
+        <canvas id="myChart"></canvas>
+       <div>
+
+
+<!--
+Script for canvas with id=mychart
+-->
+  <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: 'User_Data_',
+                  /*   To_Be_changed=Array_data               */
+                    data: [12, 9, 3, 5, 2, 3],
+
+
+
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+        </script>
+
+
+
+
+
+</body>
+</html>
