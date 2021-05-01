@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+.menu-container
+{
+background-color: lightblue;
+height: 40px;
+
+}
+.formula-container
+{
+    background-color: lightcoral;
+    height:30px;
+}
+.grid
+{
+height:calc(100vh - ( 80px + 30px + 40px ));
+}
+.sheets
+{
+    background-color: lightgreen;
+  height: 40px;
+}
+.add-sheet-container
+{
+    height: 100%;
+    width: 30px;
+    border: 1px solid grey;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    font-size: 1.2rem;
+    height:100%;
+}
+.sheet
+{
+    width: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.active-sheet
+{
+    background-color:white ;
+}
