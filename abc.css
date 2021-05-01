@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ .container
+ {
+     background-color: brown;
+     height: 1100px;
+     display :flex;
+     position: relative;
+ }
+   .box
+   {
+       border: 2px solid whitesmoke;
+       height: 130px;
+       width:240px;
+
+
+   }   
+   #id1{
+       top: 300px;
+       position: relative;
+       background-color: yellow;
+   }
+   #id2{
+       position: absolute;
+       background-color:hotpink;
+   }
+   #id3
+   {
+       background-color: black;
+   }
+   #id4
+   {
+    position: sticky;
+    top:40px;
+       background-color: blue;
+     
+   }
+     </style>
+</head>
+<body>
+      <div class="container">
+      <div class="box" id="id1">1</div>
+      <div class="box" id="id2">2</div>
+      <div class="box" id="id3">3</div>
+      <div class="box" id="id4">4</div>
+    </div>
+</body>
+</html>
