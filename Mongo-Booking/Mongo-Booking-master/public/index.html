@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Upgrade Backend Tech Challenge</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+  <h2>Upgrade Backend Tech Challenge</h2>
+  
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Book</a></li>
+    <li><a data-toggle="tab" href="#modify">Modify</a></li>
+    <li><a data-toggle="tab" href="#cancel">Cancel</a></li>
+  </ul>
+
+  <div class="tab-content">
+    
+    <div id="home" class="tab-pane fade in active">
+      <h3>Book</h3>
+
+      <form action="/booking" method="post">
+        <div class="form-group">
+            Full Name: <input name="fullName" type="text" /> <br /> <br />
+            Email: <input name="email" type="email" /> <br /> <br />
+            Arrival Date: <input data-provide="datepicker"  name="arrivalDate"> <br /> <br />
+            Departure Date: <input data-provide="datepicker"  name="departureDate" > <br /> <br />
+            <input type="submit" class="btn btn-success" value="Book"/>
+          </div>
+      </form>
+
+    </div>
+
+    <div id="modify" class="tab-pane fade">
+      <h3>Modify</h3>
+
+      <form action="/modify" method="post">
+        <div class="form-group">
+            Booking ID: <input name="bookingId" type="text" /> <br /> <br />
+            <!--Email: <input name="email" type="email" /> <br /> <br />-->
+            New Arrival Date: <input data-provide="datepicker"  name="nArrivalDate"> <br /> <br />
+            New Departure Date: <input data-provide="datepicker"  name="nDepartureDate"> <br /> <br />
+            <input type="submit" class="btn btn-warning" value="Modify"/>
+          </div>
+      </form>
+
+    </div>
+
+    <div id ="cancel" class="tab-pane fade">
+      <h3>Cancel</h3>
+
+      <form action="/delete" method="post">
+        <div class="form-group">
+            Booking ID: <input id="bookingDeleteId" name="bookingId" type="text" /> <br /> <br />
+            <!--Email: <input name="email" type="email" /> <br /> <br />-->
+            <button id="cancelId" class="btn btn-danger"> Cancel </button>
+          </div>
+      </form>
+
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
