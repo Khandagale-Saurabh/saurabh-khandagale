@@ -1,0 +1,117 @@
+// //Destructure
+
+// function Begin()
+
+
+let arr=['Saurabh','Khandagale','Rcoem','cse','Gpn','SGH']
+//get 1st and last element by giving ,,,,,,,
+
+let [ele1,ele2,ele3,,ele5]=arr;
+// console.log(`${ele1} from ${ele3} and passout from ${ele5}`);
+
+
+//Destructuring of Object  [you can change name of the elemnts in array but, by giving name:CAHNGE_NAME]
+
+let obj={
+    name:'Saurabh',
+    age:'21',
+    Fullname:'Khandgale ',
+    hbb:{
+        Sport:'Crick',
+        code:'java'
+    }
+}
+let {name,age,Fullname,hbb}=obj;//name should be same you 
+
+let {name:n1,age:a1,Fullname:f1}=obj;  //not print name it will undefine
+// console.log(n1,a1,f1);
+
+// console.log( hbb.Sport,hbb.code);//objj inside obj
+
+
+
+
+// ... operator [as element aaata hai] differ ye hai print mai [] on arr1,arr2 k output  mai[] hai
+
+
+let arr1=['Saurabh','Khandagale','Rcoem','cse','Gpn','SGH']
+let a2=['Inside Arra2','fikjo']
+
+console.log('abs',...arr1,a2);
+
+
+// render ->rerturn jsx
+
+/*
+
+1]React.createElement('h1',null,'abc..value'); or
+<h1>ABC<h1>
+
+2] ReactDOM.render(element,DOMnode)=>
+*/
+
+
+Class componet when we don't want anything in paramete[No state,no use of lifecycle methods]
+funtion is use when we want to use [stet,lifiecycle method]
+
+Ever componemt we create return a value but it retur single value so we pack them in <div> or <Fragmemett>
+
+=============
+HOw to work wit class[Extends keyword]
+
+1] render () {  retrun( <div><div>)} 
+2] this.pros.name always
+
+eg: clas Student extends React.Componemt
+{
+    render()
+    {
+        return(
+        <>
+          <h1>  {this.props.name}</h1>
+        </>
+        )
+    }
+}
+
+Children:<Student>I am childe</Student>
+to acess i am childe [props.children]
+
+===================
+state similar to pros but it is private 
+[Private not use in Function componet onlu use in class]
+1] only in class component.
+2] if you want to upadetd pros then we use state
+
+can use in class with or withour constructor
+state={
+    roll:this.state.roll;
+}
+...{this.state.roll}//without constructor
+
+class Begin extends Component
+{
+  state={
+      roll:this.props.roll,
+      name:"Saurabh"
+  }
+    render()
+    {
+      return(
+          <div>
+                <p>{this.state.roll} is roll of {this.state.name}</p>
+          </div>
+      )
+    }
+}
+export default Begin;
+
+
+***************Inside/with constructor*********
+1]always first statement super parent call ko call krta
+2]use this.state{}
+
+
+
+
+
