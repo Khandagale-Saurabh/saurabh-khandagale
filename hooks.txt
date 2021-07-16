@@ -1,0 +1,11 @@
+use state:onely one time
+1st,:
+
+
+2nd:
+compontDidMount
+it only runfs after first render
+
+3rd:
+non-empty dependency array
+runs after those render
